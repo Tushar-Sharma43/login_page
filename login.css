@@ -16,7 +16,7 @@ body {
     height: 100vh;
 }
 
-/* Main container to center the forms */
+/* Main container to center the form */
 .container {
     width: 100%;
     max-width: 400px;
@@ -33,21 +33,21 @@ body {
     flex-direction: column;
 }
 
-/* Form styling */
-.form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+/* Header Styling */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 /* Input Styling */
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="email"], input[type="password"] {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
     width: 100%;
+    margin-bottom: 15px;
     box-sizing: border-box;
 }
 
@@ -60,6 +60,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
@@ -78,13 +79,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header Styling */
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
 /* Footer text styling */
 p {
     font-size: 14px;
@@ -97,13 +91,4 @@ p {
         padding: 15px;
         max-width: 90%;
     }
-}
-
-/* Smooth transition for form visibility */
-.form-container .form {
-    display: none;
-}
-
-.form-container .form:target {
-    display: flex;
 }
